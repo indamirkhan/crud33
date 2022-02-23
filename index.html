@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="alert-info text-center md-5 p-3">
+            AJAX--PHP--BOOTSTRAP---jQuery-- CRUD
+        </h1>
+        <div class="row">
+            <form action="" class="col-sm-5" id="myForm">
+                <h3 class="alert-warning text-center p-2">Add/Update Student</h3>
+                <div>
+                    <input type="hidden" id="stuId">
+                    <label for="nameId" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameId" />
+                </div>
+                <div>
+                    <label for="emailId" class="form-label">Email</label>
+                    <input type="email" value="@gmail.com" class="form-control" id="emailId" />
+                </div>
+                <div>
+                    <label for="passwordId" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordId" />
+                </div>
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary" id="btnAdd">
+                        SAVE
+                    </button>
+                </div>
+                <div id="msg" class="alert-info text-center mt-2"></div>
+            </form>
+            <div class="col-sm-7 text-center">
+                <h3 class="alert-success p-2">
+                    Show Student Information
+                </h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scop="col">ID</th>
+                            <th scop="col">Name</th>
+                            <th scop="col">Email</th>
+                            <th scop="col">Password</th>
+                            <th scop="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqajax.js"></script>
+</body>
+
+</html>
